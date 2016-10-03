@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+<head>
+  <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+  <h1>Rangle RxJS 5.0</h1>
+  <div>
+    <a href="/examples-rxjs/index.html">Menu</a>
+  </div>
+</header>
+<div id="example"></div>
+<script src="/vendor/es6-shim/es6-shim.js"></script>
+<script src="/vendor/systemjs/dist/system.src.js"></script>
+<script>
+  System.import('system-config.js')
+          .then(()=> System.import('main'))
+          .catch(console.error.bind(console));
+</script>
+</body>
+</html>
